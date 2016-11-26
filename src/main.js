@@ -7,7 +7,6 @@ import About from './About.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     { path: '/fine-art', component: FineArt },

@@ -9,20 +9,33 @@
 </template>
 
 <style scoped>
-nav {
-  padding: 20px 0px;
-  text-align: center;
-}
-nav li {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 0px 10px;
+@media (min-width: 1200px) {
+  nav {
+    padding: 20px 0px;
+    text-align: center;
+  }
+  nav li {
+    display: inline-block;
+  }
+  .brand {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
 }
 .brand {
-  font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
   color: #000000;
   letter-spacing: 2px;
-  margin-right: 20px;
+}
+nav {
+  padding: 20px 0;
+  text-align: center;
+}
+nav ul {
+  padding-left: 0px;
+}
+nav li {
+  text-transform: uppercase;
+  padding: 0px 10px;
 }
 </style>

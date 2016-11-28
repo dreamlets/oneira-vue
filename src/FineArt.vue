@@ -19,6 +19,8 @@
 import request from 'superagent';
 import Vue from 'vue';
 
+const strtemp = 'data:image/png;base64,';
+
 export default {
   data () {
     return {
@@ -35,7 +37,7 @@ export default {
         if (err) {
           this.error = err.message;
         } else {
-          this.images = res.body
+          this.images = res.body.map(i => strtemp + i);
         }
         this.loading = false;
       });
